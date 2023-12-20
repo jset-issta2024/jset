@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=kr.ac.cau.popl.gauthierplm.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-htmlgramparser
+sourcepath = ${jpf-symbc}/src/example-htmlgramparser
+
+target = test.TestHtmlGram
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

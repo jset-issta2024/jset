@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=org.mariuszgromada.math.mxparser.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-mXparser
+sourcepath = ${jpf-symbc}/src/example-mXparser
+
+target = test.TestmXparser
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

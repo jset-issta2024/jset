@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=interpreter.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-interpreter
+sourcepath = ${jpf-symbc}/src/example-interpreter
+
+target = test.TestInterpreter

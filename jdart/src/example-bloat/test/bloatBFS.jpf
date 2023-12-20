@@ -1,0 +1,6 @@
+classpath = ${jpf-symbc}/build/example-bloat
+sourcepath = ${jpf-symbc}/src/example-bloat
+
+target = EDU.purdue.cs.bloat.decorate.ModifiedMainForSE
+
+search.class=gov.nasa.jpf.search.heuristic.BFSHeuristic

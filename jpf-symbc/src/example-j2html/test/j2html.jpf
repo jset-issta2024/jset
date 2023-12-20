@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=j2html.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-j2html
+sourcepath = ${jpf-symbc}/src/example-j2html
+
+target = test.TestJ2html

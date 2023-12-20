@@ -1,0 +1,6 @@
+@include = ../../default.jpf
+
+target=test.TestJsonFlattener
+concolic.method.start=test.TestJsonFlattener.start(data:char[])
+concolic.method=start
+jdart.termination=gov.nasa.jpf.jdart.termination.TimedTermination,0,0,900

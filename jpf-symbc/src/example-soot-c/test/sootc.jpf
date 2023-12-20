@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=ca.mcgill.sable.*,sootc.net.sf.jazzlib.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-soot-c
+sourcepath = ${jpf-symbc}/src/example-soot-c
+
+target = ca.mcgill.sable.soot.jimple.MainSE

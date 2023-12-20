@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=org.cyberneko.html.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-nekohtml
+sourcepath = ${jpf-symbc}/src/example-nekohtml
+
+target = test.TestNekohtml

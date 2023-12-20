@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/writer
+END
+CSVColumnJoiner.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/writer/CSVColumnJoiner.java
+END
+CSVEntryConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/writer/CSVEntryConverter.java
+END
+CSVWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/writer/CSVWriter.java
+END

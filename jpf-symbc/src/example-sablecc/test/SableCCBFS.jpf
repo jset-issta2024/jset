@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=ca.mcgill.sable.*,analysis.*,lexer.*,node.*,parser.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-sablecc
+sourcepath = ${jpf-symbc}/src/example-sablecc
+
+target = ca.mcgill.sable.sablecc.SableCC
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

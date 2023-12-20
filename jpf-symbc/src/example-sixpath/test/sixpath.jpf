@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=de.fzi.XPath.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-sixpath
+sourcepath = ${jpf-symbc}/src/example-sixpath
+
+target = test.TestSixpath

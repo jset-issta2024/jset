@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=io.mola.galimatias.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-galimatias
+sourcepath = ${jpf-symbc}/src/example-galimatias
+
+target = test.TestGalimatias
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:jacoco="antlib:org.jacoco.ant" name="MyTask" basedir="." default="instrument">
+
+  <property name="src.dir" value="src"/>
+  <property name="classes.dir" value="classes"/>
+
+  <property name="result.classes.dir" location="classes"/>
+  <property name="result.classes.instr.dir" location="classes-instr"/>
+
+  <path id="lib.path">
+    <fileset dir=".">
+      <include name="lib/*.jar"/>
+    </fileset>
+  </path>
+
+  <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
+    <classpath path="lib/jacocoant.jar"/>
+  </taskdef>
+
+  <target name="instrument" depends="compile">
+    <!--  Step 2: Instrument class files  -->
+    <jacoco:instrument destdir="${result.classes.instr.dir}" >
+      <fileset dir="${result.classes.dir}" includes="**/*.class"/>
+    </jacoco:instrument>
+  </target>
+
+  <target name="clean" description="Delete all generated files">
+    <delete dir="${classes.dir}" failonerror="false"/>
+    <delete file="${ant.project.name}.jar"/>
+  </target>
+
+  <target name="compile" description="Compiles the Task">
+    <mkdir dir="${classes.dir}"/>
+    <javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="lib.path" debug="true" includeantruntime="false" />
+  </target>
+
+  <target name="jar" description="JARs the Task" depends="compile">
+    <jar destfile="${ant.project.name}.jar" basedir="${classes.dir}"/>
+    <jar destfile="test.jar" basedir="${classes.dir}/test"/>
+  </target>
+
+<!--  <target name="use" description="Use the Task" depends="jar">-->
+<!--    <taskdef name="helloworld" classname="HelloWorld" classpath="${ant.project.name}.jar"/>-->
+<!--    <helloworld/>-->
+<!--  </target>-->
+
+  <target name="coverage-benchmark-actson" depends="instrument">
+    <java classname="test.testActson" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+<!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-benchmark-minimalJson" depends="instrument">
+    <java classname="test.testMinimalJson" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+
+  <target name="coverage-benchmark-galimatias" depends="instrument">
+    <java classname="test.testGalimatias" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-simple-csv" depends="instrument">
+    <java classname="test.testSimpleCsv" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-foxykeep" depends="instrument">
+    <java classname="test.TestFoxy" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-html5parser" depends="instrument">
+    <java classname="test.TestHtml5Parser" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-json-flattener" depends="instrument">
+    <java classname="test.TestJsonFlattener" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-markdown4j" depends="instrument">
+    <java classname="test.TestMarkdown4j" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-sie" depends="instrument">
+    <java classname="test.TestSie" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-snakeyaml" depends="instrument">
+    <java classname="test.testSnakeyaml" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-jurl" depends="instrument">
+    <java classname="test.testJurl" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-jpat" depends="instrument">
+    <java classname="test.testJpat" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-super-csv" depends="instrument">
+    <java classname="test.testSuperCsv" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-univocity" depends="instrument">
+    <java classname="test.testUnivocity" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-benchmark-gson" depends="instrument">
+    <java classname="test.testGson" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-xml" depends="instrument">
+    <java classname="test.testXml" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-url-detector" depends="instrument">
+    <java classname="test.testUrlDetector" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+<!--  <target name="coverage-example-txtmark" depends="instrument">-->
+<!--    <java classname="test.testTxtmark" fork="true">-->
+<!--      <classpath>-->
+<!--        <path refid="lib.path"/>-->
+<!--        <pathelement path="classes-instr"/>-->
+<!--      </classpath>-->
+<!--      &lt;!&ndash;      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>&ndash;&gt;-->
+<!--    </java>-->
+<!--  </target>-->
+
+  <target name="coverage-example-htmlcleaner" depends="instrument">
+    <java classname="test.testHtmlcleaner" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-ino-java" depends="instrument">
+    <java classname="test.testInoJava" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-jcsv" depends="instrument">
+    <java classname="test.testJcsv" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-flexmark" depends="instrument">
+    <java classname="test.testFlexmark" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-nanojson" depends="instrument">
+    <java classname="test.testNanojson" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-pobs" depends="instrument">
+    <java classname="test.TestPobs" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <!--  <target name="coverage-example-json-flattener" depends="instrument">-->
+<!--    <java classname="test.testJsonFlattener" fork="true">-->
+<!--      <classpath>-->
+<!--        <path refid="lib.path"/>-->
+<!--        <pathelement path="classes-instr"/>-->
+<!--      </classpath>-->
+<!--      &lt;!&ndash;      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>&ndash;&gt;-->
+<!--    </java>-->
+<!--  </target>-->
+
+<!--  <target name="coverage-example-json-java" depends="instrument">-->
+<!--    <java classname="test.testJsonJava" fork="true">-->
+<!--      <classpath>-->
+<!--        <path refid="lib.path"/>-->
+<!--        <pathelement path="classes-instr"/>-->
+<!--      </classpath>-->
+<!--      &lt;!&ndash;      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>&ndash;&gt;-->
+<!--    </java>-->
+<!--  </target>-->
+
+  <target name="coverage-example-jsoup" depends="instrument">
+    <java classname="test.testJsoup" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-jtidy" depends="instrument">
+    <java classname="test.testJtidy" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-jsoniter" depends="instrument">
+    <java classname="test.testJsoniter" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-fastcsv" depends="instrument">
+    <java classname="test.testFastCsv" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-jericho" depends="instrument">
+    <java classname="test.testJericho" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-nanoxml" depends="instrument">
+    <java classname="test.testNanoxml" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-benchmark-autolinkJava" depends="instrument">
+    <java classname="test.testAutolinkJava" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-commons-csv" depends="instrument">
+    <java classname="test.testCommonsCsv" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-benchmark-argo" depends="instrument">
+    <java classname="test.testArgo" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-benchmark-commonmarkJava" depends="instrument">
+    <java classname="test.testCommonmarkJava" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <!--      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>-->
+    </java>
+  </target>
+
+  <target name="coverage-example-fastjson-dev" depends="instrument">
+    <java classname="test.FastjsonDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-fastjson-dev/TestFastJSONDevParser.saveInput"/>
+    </java>
+
+    <java classname="test.FastjsonDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-fastjson-dev/TestFastJSONDevParser-TokenSymb-genTokenString-TokenLengthBound5.saveInput"/>
+    </java>
+  </target>
+
+  <target name="coverage-example-rhino" depends="instrument">
+<!--    <java classname="test.rhino.RhinoDriver" fork="true">-->
+<!--      <classpath>-->
+<!--        <path refid="lib.path"/>-->
+<!--        <pathelement path="classes-instr"/>-->
+<!--      </classpath>-->
+<!--      <arg value="src/example-rhino/TestRhino-TokenSymb-genTokenString-TokenLengthBound5.saveInput"/>-->
+<!--    </java>-->
+
+<!--    <java classname="test.rhino.RhinoDriver" fork="true">-->
+<!--      <classpath>-->
+<!--        <path refid="lib.path"/>-->
+<!--        <pathelement path="classes-instr"/>-->
+<!--      </classpath>-->
+<!--      <arg value="src/example-rhino/TestRhino.saveInput"/>-->
+<!--    </java>-->
+
+    <java classname="test.rhino.RhinoDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-rhino/.saveInput"/>
+    </java>
+  </target>
+
+  <target name="coverage-example-javaparser" depends="instrument">
+    <java classname="test.JavaparserDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-javaparser/TestJavaparserParser.saveInput"/>
+    </java>
+
+    <java classname="test.JavaparserDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-javaparser/TestJavaparserParser-TokenSymb-genTokenString-TokenLengthBound5.saveInput"/>
+    </java>
+  </target>
+
+  <target name="coverage-example-expression" depends="instrument">
+    <java classname="test.expression.ExpressionDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-expression/TestExpressionParser.saveInput"/>
+    </java>
+
+    <java classname="test.expression.ExpressionDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-expression/TestExpressionParser-TokenSymb-genTokenString-TokenLengthBound5.saveInput"/>
+    </java>
+  </target>
+
+  <target name="coverage-example-jsqlparser" depends="instrument">
+    <java classname="test.JsqlparserDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-jsqlparser/TestJsqlparserParser.saveInput"/>
+    </java>
+
+    <java classname="test.JsqlparserDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-jsqlparser/TestJsqlparserParser-TokenSymb-genTokenString-TokenLengthBound5.saveInput"/>
+    </java>
+  </target>
+
+  <target name="coverage-example-MarkdownPapers" depends="instrument">
+    <java classname="test.MarkdownPapersDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-MarkdownPapers/TestMDPParser.saveInput"/>
+    </java>
+
+    <java classname="test.MarkdownPapersDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-MarkdownPapers/TestMDPParser-TokenSymb-genTokenString-TokenLengthBound5.saveInput"/>
+    </java>
+
+  </target>
+
+  <target name="coverage-example-sixpath" depends="instrument">
+    <java classname="test.sixpath.SixpathDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-sixpath/TestSixpathParser.saveInput"/>
+    </java>
+
+    <java classname="test.sixpath.SixpathDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-sixpath/TestSixpathParser-TokenSymb-genTokenString-TokenLengthBound5.saveInput"/>
+    </java>
+
+  </target>
+
+  <target name="coverage-example-mXparser" depends="instrument">
+<!--    <java classname="test.mxparser.mXparserDriver" fork="true">-->
+<!--      <classpath>-->
+<!--        <path refid="lib.path"/>-->
+<!--        <pathelement path="classes-instr"/>-->
+<!--      </classpath>-->
+<!--      <arg value="src/example-mXparser/TestmXparserParser.saveInput"/>-->
+<!--    </java>-->
+
+<!--    <java classname="test.mxparser.mXparserDriver" fork="true">-->
+<!--      <classpath>-->
+<!--        <path refid="lib.path"/>-->
+<!--        <pathelement path="classes-instr"/>-->
+<!--      </classpath>-->
+<!--      <arg value="src/example-mXparser/TestmXparserParser-TokenSymb-genTokenString-TokenLengthBound5.saveInput"/>-->
+<!--    </java>-->
+
+    <java classname="test.mxparser.mXparserDriver" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="src/example-mXparser/TestmXparserParser-TokenSymb-genTokenString-TokenLengthBound5-stage3.saveInput"/>
+    </java>
+
+  </target>
+
+  <target name="GenCoverage">
+    <java classname="${classToRun}" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="${SaveInputFile}"/>
+    </java>
+  </target>
+
+  <target name="BriefCoverage">
+    <java classname="${classToRun}" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes-instr"/>
+      </classpath>
+      <arg value="${SaveInputFile}"/>
+      <arg value="${brief}"/>
+    </java>
+  </target>
+
+  <target name="SpeedTest">
+    <java classname="${classToRun}" fork="true">
+      <classpath>
+        <path refid="lib.path"/>
+        <pathelement path="classes"/>
+      </classpath>
+      <arg value="${SaveInputFile}"/>
+      <arg value="1"/>
+      <jvmarg value="-Xms10240M"/>
+      <jvmarg value="-Xint"/>
+    </java>
+  </target>
+
+</project>

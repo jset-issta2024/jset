@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=djb.*,net.sf.ntru.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-ntru
+sourcepath = ${jpf-symbc}/src/example-ntru
+
+target = test.NTRUExample

@@ -1,0 +1,4 @@
+*.zip
+/.idea/
+*/build-idea/*
+/jpf-symbc/expeResult/*

@@ -1,0 +1,4 @@
+classpath = ${jpf-symbc}/build/example-ftp
+sourcepath = ${jpf-symbc}/src/example-ftp
+
+target = test.TestFTP

@@ -1,0 +1,79 @@
+// $ANTLR 2.7.7 (20060906): idl.g -> IDLTokenTypes.txt$
+IDL    // output token vocab name
+SEMI(";")=4
+LITERAL_module="module"=5
+LCURLY("{")=6
+RCURLY("}")=7
+LITERAL_interface="interface"=8
+COLON(":")=9
+COMMA(",")=10
+SCOPEOP("::")=11
+LITERAL_const="const"=12
+ASSIGN("=")=13
+OR("|")=14
+XOR("^")=15
+AND("&")=16
+LSHIFT("<<")=17
+RSHIFT(">>")=18
+PLUS("+")=19
+MINUS("-")=20
+STAR("*")=21
+DIV("/")=22
+MOD("%")=23
+TILDE("~")=24
+LPAREN("(")=25
+RPAREN(")")=26
+LITERAL_TRUE="TRUE"=27
+LITERAL_FALSE="FALSE"=28
+LITERAL_typedef="typedef"=29
+LITERAL_native="native"=30
+LITERAL_octet="octet"=31
+LITERAL_any="any"=32
+LITERAL_unsigned="unsigned"=33
+LITERAL_short="short"=34
+LITERAL_long="long"=35
+LITERAL_char="char"=36
+LITERAL_float="float"=37
+LITERAL_double="double"=38
+LITERAL_boolean="boolean"=39
+LITERAL_struct="struct"=40
+LITERAL_union="union"=41
+LITERAL_switch="switch"=42
+LITERAL_case="case"=43
+LITERAL_default="default"=44
+LITERAL_enum="enum"=45
+LITERAL_sequence="sequence"=46
+LT("<")=47
+GT(">")=48
+LITERAL_string="string"=49
+LBRACK("[")=50
+RBRACK("]")=51
+LITERAL_readonly="readonly"=52
+LITERAL_attribute="attribute"=53
+LITERAL_exception="exception"=54
+LITERAL_oneway="oneway"=55
+LITERAL_void="void"=56
+LITERAL_in="in"=57
+LITERAL_out="out"=58
+LITERAL_inout="inout"=59
+LITERAL_raises="raises"=60
+LITERAL_context="context"=61
+INT("an integer value")=62
+OCTAL=63
+HEX("a hexadecimal value value")=64
+STRING_LITERAL("a string literal")=65
+CHAR_LITERAL("a character literal")=66
+FLOAT("an floating point value")=67
+IDENT("an identifer")=68
+QUESTION("?")=69
+DOT(".")=70
+NOT("!")=71
+WS("white space")=72
+PREPROC_DIRECTIVE("a preprocessor directive")=73
+SL_COMMENT("a comment")=74
+ML_COMMENT("a comment")=75
+ESC("an escape sequence")=76
+VOCAB("an escaped character value")=77
+DIGIT("a digit")=78
+OCTDIGIT("an octal digit")=79
+HEXDIGIT("a hexadecimal digit")=80

@@ -1,0 +1,15 @@
+classpath = ${jpf-symbc}/build/example-colt
+sourcepath = ${jpf-symbc}/src/example-colt
+
+target = test.TestColtQR
+
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+symbolic.lazy=on
+symbolic.arrays=true
+symbolic.collect_constraints=true
+symbolic.concolic=true
+
+budget.max_time=900000
+coverage.include=cern.*,corejava.*,hep.aida.*
+listener = gov.nasa.jpf.symbc.SymbolicListener,gov.nasa.jpf.listener.BudgetChecker,gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer

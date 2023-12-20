@@ -1,0 +1,1 @@
+var a = 5 for(var i = 0; i < 10;) { i = 10 ;} for(var i = 0; i < 10;) { i = 10 ;} for(var i = 0; i < 10;) { i = 10 ;} false && true false && true

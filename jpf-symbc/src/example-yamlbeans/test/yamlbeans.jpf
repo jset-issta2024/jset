@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=com.esotericsoftware.yamlbeans.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-yamlbeans
+sourcepath = ${jpf-symbc}/src/example-yamlbeans
+
+target = test.TestYamlbeansDriver

@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=schroeder.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-schroeder
+sourcepath = ${jpf-symbc}/src/example-schroeder
+
+target = test.TestWAVEFileRead

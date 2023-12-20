@@ -1,0 +1,6 @@
+classpath = ${jpf-symbc}/build/example-ftp
+sourcepath = ${jpf-symbc}/src/example-ftp
+
+target = test.TestFTP
+
+search.class=gov.nasa.jpf.search.heuristic.BFSHeuristic

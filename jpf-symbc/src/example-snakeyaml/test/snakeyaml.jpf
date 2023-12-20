@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=org.yaml.snakeyaml.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-snakeyaml
+sourcepath = ${jpf-symbc}/src/example-snakeyaml
+
+target = test.testSnakeyaml

@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=cloptions.*,compiler.*,parser.*,pretty.*,staticanalysis.*,syntaxtree.*,visitor.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-mapl
+sourcepath = ${jpf-symbc}/src/example-mapl
+
+target = test.TestMapl
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

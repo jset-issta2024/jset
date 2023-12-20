@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=com.antlr.javaexpression.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-javaexpression
+sourcepath = ${jpf-symbc}/src/example-javaexpression
+
+target = test.TestJavaexpr
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

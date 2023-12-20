@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/150/trunk/src/main/java/com/googlecode/jcsv/reader
+END
+CSVReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/CSVReader.java
+END
+CSVEntryFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/CSVEntryFilter.java
+END
+CachedCSVReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/CachedCSVReader.java
+END
+CSVTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/CSVTokenizer.java
+END
+CSVEntryParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/CSVEntryParser.java
+END

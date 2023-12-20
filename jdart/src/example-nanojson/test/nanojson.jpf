@@ -1,0 +1,7 @@
+@include = ../../default.jpf
+
+target=test.TestNanojson
+concolic.method.start=test.TestNanojson.start(data:char[])
+concolic.method=start
+
+jdart.termination=gov.nasa.jpf.jdart.termination.TimedTermination,0,0,900

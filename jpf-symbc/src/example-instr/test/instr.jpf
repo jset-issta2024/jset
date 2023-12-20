@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=com.antlr.instr.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-instr
+sourcepath = ${jpf-symbc}/src/example-instr
+
+target = test.TestInstr

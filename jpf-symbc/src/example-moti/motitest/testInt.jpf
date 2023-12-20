@@ -1,0 +1,27 @@
+target=motitest.testInt
+classpath = ${jpf-symbc}/build/example-moti
+sourcepath = ${jpf-symbc}/src/example-moti
+
+symbolic.method = motitest.testInt.branch(sym#sym)
+
+symbolic.minint=-100
+symbolic.maxint=100
+
+vm.storage.class=nil
+
+# specify the decision procedure to use
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+
+# print some debug information
+# symbolic.debug=true
+
+# listener to print information (PCs, test cases) about symbolic run
+listener = gov.nasa.jpf.symbc.SymbolicListener
+
+# handling symbolic arrays
+symbolic.lazy=on
+symbolic.arrays=true
+
+symbolic.collect_constraints=true
+symbolic.concolic=true

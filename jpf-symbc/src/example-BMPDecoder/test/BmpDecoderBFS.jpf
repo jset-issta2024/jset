@@ -1,0 +1,30 @@
+# @include = ../../concolic.jpf
+
+# specify the decision procedure to use
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+
+# print some debug information
+symbolic.debug=true
+
+# listener to print information (PCs, test cases) about symbolic run
+# listener = gov.nasa.jpf.symbc.SymbolicListener
+listener = gov.nasa.jpf.symbc.SymbolicListener,gov.nasa.jpf.listener.BudgetChecker
+budget.max_time=900000
+
+coverage.include=bmp.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+# handling symbolic arrays
+symbolic.lazy=on
+symbolic.arrays=true
+
+symbolic.collect_constraints=true
+symbolic.concolic=true
+
+classpath = ${jpf-symbc}/build/example-BMPDecoder
+sourcepath = ${jpf-symbc}/src/example-BMPDecoder
+
+target = test.TestBMPDecoder
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="jacocoagent (3)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../IncrementalCoverage/lib/jacocoagent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../IncrementalCoverage/lib/jacocoant.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../IncrementalCoverage/lib/org.jacoco.agent-0.7.2.201409121644.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../IncrementalCoverage/lib/org.jacoco.ant-0.7.2.201409121644.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../IncrementalCoverage/lib/org.jacoco.core-0.7.2.201409121644.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../IncrementalCoverage/lib/org.jacoco.report-0.7.2.201409121644.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

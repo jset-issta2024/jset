@@ -1,0 +1,17 @@
+# @include = ../concolic.jpf
+
+classpath = ${jpf-symbc}/build/example-simple-csv
+sourcepath = ${jpf-symbc}/src/example-simple-csv
+
+target = test.TestSimplecsv
+
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+symbolic.lazy=on
+symbolic.arrays=true
+symbolic.collect_constraints=true
+symbolic.concolic=true
+
+budget.max_time=900000
+coverage.include=net.quux00.simplecsv.*
+listener = gov.nasa.jpf.symbc.SymbolicListener,gov.nasa.jpf.listener.BudgetChecker,gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer

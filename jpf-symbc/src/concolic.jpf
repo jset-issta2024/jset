@@ -1,0 +1,19 @@
+
+# specify the decision procedure to use
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+
+# print some debug information
+symbolic.debug=true
+
+# listener to print information (PCs, test cases) about symbolic run
+# listener = gov.nasa.jpf.symbc.SymbolicListener
+listener = gov.nasa.jpf.symbc.SymbolicListener,gov.nasa.jpf.listener.BudgetChecker
+budget.max_time=900000
+
+# handling symbolic arrays
+symbolic.lazy=on
+symbolic.arrays=true
+
+symbolic.collect_constraints=true
+symbolic.concolic=true

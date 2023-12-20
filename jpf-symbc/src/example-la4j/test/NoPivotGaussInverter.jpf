@@ -1,0 +1,21 @@
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+
+symbolic.debug=true
+
+listener = gov.nasa.jpf.symbc.SymbolicListener,gov.nasa.jpf.listener.BudgetChecker
+budget.max_time=900000
+
+symbolic.lazy=on
+symbolic.arrays=true
+
+symbolic.collect_constraints=true
+symbolic.concolic=true
+
+coverage.include=org.la4j.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-la4j
+sourcepath = ${jpf-symbc}/src/example-la4j
+
+target = test.TestNoPivotGaussInverter

@@ -1,0 +1,7 @@
+@include = ../../default.jpf
+
+target=test.pobs.SimpleCalc
+concolic.method.start=test.pobs.SimpleCalc.start()
+concolic.method=start
+jdart.termination=gov.nasa.jpf.jdart.termination.TimedTermination,0,0,900
+

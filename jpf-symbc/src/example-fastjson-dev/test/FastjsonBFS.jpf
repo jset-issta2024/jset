@@ -1,0 +1,31 @@
+# @include = ../../concolic.jpf
+
+
+# specify the decision procedure to use
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+
+# print some debug information
+symbolic.debug=true
+
+# listener to print information (PCs, test cases) about symbolic run
+# listener = gov.nasa.jpf.symbc.SymbolicListener
+listener = gov.nasa.jpf.symbc.SymbolicListener,gov.nasa.jpf.listener.BudgetChecker
+budget.max_time=900000
+
+# handling symbolic arrays
+symbolic.lazy=on
+symbolic.arrays=true
+
+symbolic.collect_constraints=true
+symbolic.concolic=true
+
+coverage.include=com.alibaba.fastjson.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-fastjson-dev
+sourcepath = ${jpf-symbc}/src/example-fastjson-dev
+
+target = test.testFastjsonDev
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

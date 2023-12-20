@@ -1,0 +1,5 @@
+public abstract class Sample < T , E > extends Object implements SampleInter < T , E > { public Sample () {
+super ();}
+ public void test1 () {
+ int a = 1;}public void test2 () {
+ int a = 1;}}

@@ -1,0 +1,7 @@
+@include = ../../default.jpf
+
+target=test.TestUrlDetector
+concolic.method.start=test.TestUrlDetector.start(data:char[])
+concolic.method=start
+
+jdart.termination=gov.nasa.jpf.jdart.termination.TimedTermination,0,0,900

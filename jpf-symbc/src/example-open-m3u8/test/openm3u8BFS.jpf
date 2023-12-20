@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=com.iheartradio.m3u8.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-open-m3u8
+sourcepath = ${jpf-symbc}/src/example-open-m3u8
+
+target = test.TestOpenM3u8
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

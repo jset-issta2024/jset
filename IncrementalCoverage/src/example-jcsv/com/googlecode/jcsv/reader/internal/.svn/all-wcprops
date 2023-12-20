@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/150/trunk/src/main/java/com/googlecode/jcsv/reader/internal
+END
+CSVReaderBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/internal/CSVReaderBuilder.java
+END
+CSVTokenizerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/internal/CSVTokenizerImpl.java
+END
+CachedCSVReaderImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/internal/CachedCSVReaderImpl.java
+END
+AnnotationEntryParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/150/trunk/src/main/java/com/googlecode/jcsv/reader/internal/AnnotationEntryParser.java
+END
+DefaultCSVEntryParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/internal/DefaultCSVEntryParser.java
+END
+SimpleCSVTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/internal/SimpleCSVTokenizer.java
+END
+CSVReaderImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/122/trunk/src/main/java/com/googlecode/jcsv/reader/internal/CSVReaderImpl.java
+END

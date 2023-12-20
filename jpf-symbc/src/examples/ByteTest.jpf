@@ -1,0 +1,13 @@
+target=ByteTest
+classpath=${jpf-symbc}/build/examples
+sourcepath=${jpf-symbc}/src/examples
+symbolic.method = ByteTest.test(sym#sym)
+symbolic.dp=z3
+#vm.storage.class=nil
+#listener = .symbc.SymbolicListener
+#listener = .listener.ChoiceTracker
+#listener = gov.nasa.jpf.symbc.sequences.SymbolicSequenceListener
+
+symbolic.concolic=true
+
+listener=gov.nasa.jpf.symbc.SymbolicListener,.symbc.concolic.ConcreteExecutionListener

@@ -1,0 +1,17 @@
+# @include = ../../concolic.jpf
+
+classpath = ${jpf-symbc}/build/example-jmp123_400_utf8_mini
+sourcepath = ${jpf-symbc}/src/example-jmp123_400_utf8_mini
+
+target = test.TestJmp123Driver
+
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+symbolic.lazy=on
+symbolic.arrays=true
+symbolic.collect_constraints=true
+symbolic.concolic=true
+
+budget.max_time=3000
+coverage.include=jmp123.*
+listener = gov.nasa.jpf.symbc.SymbolicListener,gov.nasa.jpf.listener.BudgetChecker,gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer

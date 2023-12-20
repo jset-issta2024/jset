@@ -1,0 +1,19 @@
+# @include = ../../concolic.jpf
+
+classpath = ${jpf-symbc}/build/example-commonmark-java
+sourcepath = ${jpf-symbc}/src/example-commonmark-java
+
+target = test.TestCommonmarkJava
+
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+symbolic.lazy=on
+symbolic.arrays=true
+symbolic.collect_constraints=true
+symbolic.concolic=true
+
+budget.max_time=900000
+coverage.include=org.commonmark.*
+listener = gov.nasa.jpf.symbc.SymbolicListener,gov.nasa.jpf.listener.BudgetChecker,gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

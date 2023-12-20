@@ -1,0 +1,1 @@
+void main(){ int a,b;int result = 3;} void test2(){ int a,b;int result = 3;} void test1(){ int a,b;int result = 3;}

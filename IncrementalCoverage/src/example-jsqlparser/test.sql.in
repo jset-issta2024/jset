@@ -1,0 +1,13 @@
+   CREATE  TABLE  STUDENTS
+
+   (SNO      NUMERIC (6, 0) NOT NULL
+
+   SNAME    CHAR (8) NOT NULL
+
+   AGE      NUMERIC(3.0,0)
+
+   SEX      CHAR(2)
+
+   BPLACE  CHAR(20)
+
+   PRIMARY KEY(SNO))

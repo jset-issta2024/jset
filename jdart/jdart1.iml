@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/annotations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/peers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-colt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-la4j" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-commonmark-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-rhino" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-aejcc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-awkparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-bling" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-calculator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-curta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-firstorderparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-golang" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-htmlparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsijcc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsonparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsonparser-mwnorman" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-json-raupachz" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-sqlparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-htmlparser2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-javaparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-mapl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-oajavaparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-snakeyaml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsqlparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-json-flattener" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-actson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jieba" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-json-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-sablecc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jdom" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-xerces" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-fastjson-dev" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-j2latex" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-ImageJA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-argo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-autolink" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-interpreter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jurl" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lib2" level="project" />
+    <orderEntry type="module" module-name="jpf-core" />
+    <orderEntry type="library" name="Maven: junit:junit:4.10" level="project" />
+    <orderEntry type="library" name="commons-text-1.3" level="project" />
+  </component>
+</module>

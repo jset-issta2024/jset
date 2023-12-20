@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=ij.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-ImageJA
+sourcepath = ${jpf-symbc}/src/example-ImageJA
+
+target = test.TestBmpDecoderDriver

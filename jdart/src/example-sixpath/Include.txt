@@ -1,0 +1,5 @@
+Primordial,Java,stdlib,none
+Primordial,Java,jarFile,primordial.jar.model
+Application,Java,binaryDir,build/example-sixpath/test/sixpath
+Application,Java,binaryDir,build/example-sixpath/de/fzi/XPath
+Application,Java,binaryDir,build/example-sixpath/de/fzi/XPath/Parser

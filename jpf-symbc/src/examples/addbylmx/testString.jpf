@@ -1,0 +1,14 @@
+target = addbylmx.testString
+
+coverage.include=*.testString
+coverage.show_methods=true
+coverage.show_bodies=true
+
+symbolic.concolic=true
+#symbolic.debug=on
+symbolic.method=addbylmx.testString.start(sym)
+listener=gov.nasa.jpf.symbc.SymbolicListener,.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+
+classpath = ${jpf-symbc}/build/examples
+sourcepath = ${jpf-symbc}/build/examples

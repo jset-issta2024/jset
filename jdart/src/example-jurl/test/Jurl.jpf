@@ -1,0 +1,6 @@
+@include = ../../default.jpf
+
+target=test.TestJurl
+concolic.method.start=test.TestJurl.start(data1:char[],data2:char[])
+concolic.method=start
+jdart.termination=gov.nasa.jpf.jdart.termination.TimedTermination,0,0,900

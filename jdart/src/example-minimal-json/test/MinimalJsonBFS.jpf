@@ -1,0 +1,9 @@
+@include = ../../default.jpf
+
+target=test.TestDriver
+concolic.method.start=test.TestDriver.start(data:char[])
+concolic.method=start
+
+jdart.termination=gov.nasa.jpf.jdart.termination.TimedTermination,0,0,900
+
+search.class=gov.nasa.jpf.search.heuristic.BFSHeuristic

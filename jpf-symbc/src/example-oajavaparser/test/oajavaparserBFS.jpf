@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=com.viaoa.javaparser.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-oajavaparser
+sourcepath = ${jpf-symbc}/src/example-oajavaparser
+
+target = test.TestOajavaParser
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=net.sf.image4j.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-image4j
+sourcepath = ${jpf-symbc}/src/example-image4j
+
+target = test.TestImage4jDriver

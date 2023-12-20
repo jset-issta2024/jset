@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=html.grammarparser.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-htmlparser2
+sourcepath = ${jpf-symbc}/src/example-htmlparser2
+
+target = test.TestHtmlparser2

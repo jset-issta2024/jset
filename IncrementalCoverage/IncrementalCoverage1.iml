@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Python" name="Python">
+      <configuration sdkName="" />
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/build-idea" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/example-MarkdownPapers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-aejcc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-awkparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-bling" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-calculator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-clojure" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-cmmparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-curta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-expression" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-firstorderparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-htmlgramparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-htmlparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-j2latex" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-javacc-url-poc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-javaparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsijcc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-json-raupachz" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsonparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsonparser-mwnorman" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsqlparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-mXparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-mapl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-motiexample" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-oajavaparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-rhino" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-sixpath" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-sqlparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-uriparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/support" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-actson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-argo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-autolinkJava" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-commonmarkJava" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-ImageJ" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-FastCSV" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-fastjson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-flexmarkJava" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-galimatias" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-gson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-jepJava" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-fastjson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/benchmark-commonsCsv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-commons-csv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-fastcsv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-flexmark" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-gson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-htmlcleaner" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-ino-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jcsv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jericho" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jpat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsoniter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-json-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsoup" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jtidy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jurl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-markdown4j" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-minimal-json" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-nanojson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-nanoxml" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lib (2)" level="project" />
+    <orderEntry type="library" name="derby" level="project" />
+  </component>
+</module>

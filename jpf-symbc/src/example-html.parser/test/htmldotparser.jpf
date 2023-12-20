@@ -1,0 +1,6 @@
+@include = ../../concolic.jpf
+
+classpath = ${jpf-symbc}/build/example-html.parser
+sourcepath = ${jpf-symbc}/src/example-html.parser
+
+target = test.TestHtmlParser

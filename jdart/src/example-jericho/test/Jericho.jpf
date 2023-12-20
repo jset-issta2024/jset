@@ -1,0 +1,6 @@
+@include = ../../default.jpf
+
+target=test.html.TestHTML
+concolic.method.start=test.html.TestHTML.start()
+concolic.method=start
+jdart.termination=gov.nasa.jpf.jdart.termination.TimedTermination,0,0,900

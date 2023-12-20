@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/build-idea" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/annotations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-fastcsv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-moti" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-url-detector" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-xml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/motitest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/peers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-actson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-argo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-autolink" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-BMPDecoder" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-ImageJA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-commonmark-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-commons-csv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-expression" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-fastjson-dev" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-flexmark" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-galimatias" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-gson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-htmlcleaner" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-ino-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jcsv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jericho" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-simple-csv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-super-csv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jmp123_400_utf8_mini" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jpat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsoniter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-json-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsoup" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-sablecc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jtidy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jurl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-schroeder" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-MarkdownPapers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-minimal-json" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-rhino" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-nanoxml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-nanojson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-pobs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-univocity" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-markdown4j" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-aejcc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-Antlr" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-awkparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-bling" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-bloat" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-calculator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-clojure" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-cmmparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-CommonsCodec" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-curta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-dom4j" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-firstorderparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-formula4j" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-foxykeep" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-ftp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-html5parser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-htmlgramparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-htmlparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-htmlparser2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-image4j" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-interpreter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-j2html" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-j2latex" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-javaparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jieba" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-JLex" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jodatime" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsijcc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-json-raupachz" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-json-simple" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsonparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsonparser-mwnorman" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-jsqlparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-markdownj" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-mp3agic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-mXparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-nekohtml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-ntru" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-oajavaparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-open-m3u8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-sie" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-sixpath" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-snakeyaml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-sqlparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-toba" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-uriparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-yamlbeans" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-json-flattener" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-antlrjava" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-exprast" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-golang" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-idl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-instr" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-javaexpression" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-rparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-xerces" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example-mapl" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="jpf-core" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <NATIVE>
+          <root url="file://$MODULE_DIR$/lib" />
+        </NATIVE>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../jdart/lib/ST-4.0.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/junit-4.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/Jama-1.0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/gson-2.2.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/icu4j-53.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/jdom-2.0.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/guava-14.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/commons-text-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/commons-lang3-3.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/antlr-3.4-complete.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/minimal-json-0.9.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/javassist-3.22.0-GA.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/jackson-annotations-2.9.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../jdart/lib/jconstraints-0.9.1-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Jama-1.0.2" level="project" />
+    <orderEntry type="library" name="icu4j-53.1(2)" level="project" />
+    <orderEntry type="library" name="jdom-2.0.5 (2)" level="project" />
+    <orderEntry type="library" name="slf4j-api-1.7.2" level="project" />
+    <orderEntry type="library" name="commons-logging-1.1.1" level="project" />
+    <orderEntry type="library" name="javax.json-1.1.4" level="project" />
+    <orderEntry type="library" name="commons-text-1.3" level="project" />
+    <orderEntry type="library" name="javassist-3.22.0-GA" level="project" />
+    <orderEntry type="library" name="jackson-annotations-2.9.5" level="project" />
+    <orderEntry type="library" name="gson-2.2.4" level="project" />
+    <orderEntry type="library" name="antlr-3.4-complete" level="project" />
+    <orderEntry type="library" name="msv-20030807 (2)" level="project" />
+    <orderEntry type="library" name="xsdlib-20030807 (2)" level="project" />
+    <orderEntry type="library" name="commons-net-3.1 (2)" level="project" />
+    <orderEntry type="library" name="closure-compiler-r2388" level="project" />
+    <orderEntry type="library" name="org.apache.xerces-2.9.0-20081006" level="project" />
+  </component>
+</module>

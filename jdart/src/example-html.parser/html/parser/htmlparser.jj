@@ -1,0 +1,354 @@
+//by baraa khateeb @2019
+options
+{
+  IGNORE_CASE = true;
+}
+PARSER_BEGIN(test)
+import java.util.Scanner;
+public class test
+{
+  static int TD_Count=0,TR_Count=0,ListItem_Count=0;
+  public static void main(String [] arg)
+  {
+    try
+    {
+      test parser = new test(System.in);
+      String rus = parser.start();
+      System.out.print(rus);
+    }
+    catch (Exception e)
+    {
+      System.out.print(e);
+    }
+  }
+}
+
+PARSER_END(test)
+
+//R.E
+<*> SKIP:
+{
+  < " " >
+| < "\n" >
+| < "\t" >
+| < "\r" >
+| < "<!--" <STRING> "-->" >
+}
+
+TOKEN:
+{
+<HTML : "HTML"> | <HEAD : "HEAD"> | <BODY : "BODY">|
+< ST_TABLE : "<TABLE>" > | < ND_TABLE : "</TABLE>" >
+| < ST_TITLE : "<TITLE>"> | < ND_TITLE : "</TITLE>">
+| < ST_P : "<P>"> | < ND_P : "</P>">
+| < ST_A : "<A" (" ")* "href" (" ")* "=" (" ")* "\"" <STRING> "\"" (" ")* ">"> | < ND_A : "</A>">
+| < ST_IMG : "<IMG" (" ")* "src" (" ")* "=" (" ")* "\"" <STRING> "\"" (" ")* (<WIDTH>)? (<HEIGHT>)? (<ALT>)? ">">
+| < ST_TD : "<TR>" > | < ND_TD : "</TR>" >
+| < ST_TR : "<TD>" > | < ND_TR : "</TD>" >
+| < ST_DIV : "<DIV" (<CLASS>)? ">" > | < ND_DIV : "</DIV>" >
+| < ST_H1 : "<H1>" > | < ND_H1 : "</H1>" >
+| < ST_H2 : "<H2>" > | < ND_H2 : "</H2>" >
+| < ST_H3 : "<H3>" > | < ND_H3 : "</H3>" >
+| < ST_H4 : "<H4>" > | < ND_H4 : "</H4>" >
+| < ST_H5 : "<H5>" > | < ND_H5 : "</H5>" >
+| < ST_H6 : "<H6>" > | < ND_H6 : "</H6>" >
+| < ST_SPAN : "<SPAN>" > | < ND_SPAN : "</SPAN>" >
+| < ST_DETAILS : "<details>" > | < ND_DETAILS : "</details>" >
+| < ST_SUMMARY : "<summary>" > | < ND_SUMMARY : "</summary>" >
+| < ST_OL : "<OL>" > | < ND_OL : "</OL>" >
+| < ST_LI : "<LI>" > | < ND_LI : "</LI>" >
+| < ST_BUTTON : "<BUTTON>" > | < ND_BUTTON : "</BUTTON>" >
+|   
+<ST : "<">
+|
+<ND : ">">
+|
+<STRING : (["0"-"9"]|["a"-"z"]|"-"|" "|"//"|":"|"."|"_"|",")+ >
+|
+< #WIDTH : (" ")* "WIDTH" (" ")* "=" (" ")* "\"" <STRING> "\"" (" ")* >
+|
+< #HEIGHT : (" ")* "HEIGHT" (" ")* "=" (" ")* "\"" <STRING> "\"" (" ")* >
+|
+< #ALT : (" ")* "ALT" (" ")* "=" (" ")* "\"" <STRING> "\"" (" ")* >
+|
+< #CLASS : (" ")* "CLASS" (" ")* "=" (" ")* "\"" <STRING> "\"" (" ")* >
+}
+
+//----------------------------
+String start():{}
+{
+  HTML_DOC()
+  {
+    return "\n---------------\nValid Html Document\n"+"TD Count="+TD_Count+"\nTR Count="+TR_Count;
+  }
+}
+String HTML_DOC():{String content="no strings";}
+{
+  (
+    <ST> <HTML> ("lang=\"" <STRING> "\"")? <ND>
+
+	DOC_HEAD()
+	DOC_BODY()
+	
+	(content=<STRING>.image)* 
+	
+    <ST> "/" <HTML> <ND>
+  )
+  {
+    System.out.print("HTML - > "+content+'\n');
+    return content;
+  }
+}
+String DOC_HEAD():{String content="no strings";}
+{
+  (
+    <ST> <HEAD> <ND>
+
+	(content=<STRING>.image)*
+	
+	(
+	  Title()
+	)?
+	
+	(content=<STRING>.image)*
+	
+    <ST> "/" <HEAD> <ND>
+  )
+  {
+    System.out.print("Head - > "+content+'\n');
+    return content;
+  }
+}
+String DOC_BODY():{String content="no strings";}
+{
+  (
+    <ST> <BODY> <ND>
+
+	(Paragraph()|Anchor()|IMG()|DIV()|Header()|details()|Table()|List()|Button()|(content=<STRING>.image))*
+    <ST> "/" <BODY> <ND>
+  )
+  {
+    System.out.print("Body - > "+content+'\n');
+    return content;
+  }
+}
+void Table(): {}
+{
+  (
+    <ST_TABLE>
+
+    (
+      (TD())*
+    )
+    <ND_TABLE>
+  )
+}
+void TD():{}//it's tr not td
+{
+  (
+    <ST_TD>
+	(
+	  TR()
+	)*
+    <ND_TD>
+  )
+  {
+    TD_Count++;
+  }
+}
+String TR():{String content="no strings";}//it's td not tr
+{
+  (
+    <ST_TR>
+
+	(content=<STRING>.image)*
+	
+    <ND_TR>
+  )
+  {
+    TR_Count++;
+    System.out.print("TR ["+TR_Count+"]- > "+content+'\n');
+    return content;
+  }
+}
+String Title():{String content="no strings";}
+{
+  (
+    <ST_TITLE>
+
+	(content=<STRING>.image)*
+	
+    <ND_TITLE>
+  )
+  {
+    System.out.print("Title - > "+content+'\n');
+    return content;
+  }
+}
+String Paragraph():{String content="no strings";}
+{
+  (
+    < ST_P >
+
+	(content=<STRING>.image)*
+	
+    < ND_P >
+  )
+  {
+    System.out.print("P - > "+content+'\n');
+    return content;
+  }
+}
+String Anchor():{String content="no strings";}
+{
+  (
+    <ST_A>
+	(content=<STRING>.image)*
+    <ND_A>
+  )
+  {
+    System.out.print("Anchor - > "+content+'\n');
+    return content;
+  }
+}
+String IMG():{String content="no strings";}
+{
+  (
+    content=< ST_IMG >.image
+  )
+  {
+    System.out.print("IMG - > "+content+'\n');
+    return content;
+  }
+}
+String DIV():{String content="no additional strings";}
+{
+  (
+    < ST_DIV >
+
+	(
+	  (Header()|Button()|List()|Paragraph()|Span())|(content=<STRING>.image)
+	)*
+	
+    < ND_DIV >
+  )
+  {
+    System.out.print("DIV - > "+content+'\n');
+    return content;
+  }
+}
+String Span():{String content="no additional strings";}
+{
+  (
+    < ST_SPAN >
+
+	(content=<STRING>.image)*
+	
+    < ND_SPAN >
+  )
+  {
+    System.out.print("Span - > "+content+'\n');
+    return content;
+  }
+}
+String details():{String content="no details string";}
+{
+  (
+    < ST_DETAILS >
+	(summary()|Paragraph()|content=<STRING>.image)*
+    < ND_DETAILS >
+  )
+  {
+    System.out.print("Details - > "+content+'\n');
+    return content;
+  }
+}
+String summary():{String content="no details string";}
+{
+  (
+    < ST_SUMMARY >
+
+	(content=<STRING>.image)*
+	
+    < ND_SUMMARY >
+  )
+  {
+    System.out.print("Summary - > "+content+'\n');
+    return content;
+  }
+}
+void List():{}
+{
+  (
+    < ST_OL > { ListItem_Count=0; System.out.print("---------------\n"); }
+
+	(ListItem())*
+	
+    < ND_OL >
+    {
+      System.out.print("OL [Count] - > "+ListItem_Count+'\n');
+      System.out.print("---------------\n");
+	}
+  )
+}
+String ListItem():{String content="";}
+{
+  (
+    < ST_LI >
+
+	(content=<STRING>.image)*
+	
+    < ND_LI >
+  )
+  {
+    ListItem_Count++;
+    System.out.print(ListItem_Count+". "+content+'\n');
+    return content;
+  }
+}
+String Button():{String content="";}
+{
+  (
+    < ST_BUTTON >
+
+	(content=<STRING>.image)*
+	
+    < ND_BUTTON >
+  )
+  {
+    System.out.print("Button - > "+content+'\n');
+    return content;
+  }
+}
+String Header():{String content="no strings",Selected="H";}
+{
+  (
+    (
+      (Selected=< ST_H1 >.image)(content=<STRING>.image)*< ND_H1 >
+    )
+  | 
+    (
+      (Selected=< ST_H2 >.image)(content=<STRING>.image)*< ND_H2 >
+    )
+  | 
+    (
+      (Selected=< ST_H3 >.image)(content=<STRING>.image)*< ND_H3 >
+    )
+  | 
+    (
+      (Selected=< ST_H4 >.image)(content=<STRING>.image)*< ND_H4 >
+    )
+  | 
+    (
+      (Selected=< ST_H5 >.image)(content=<STRING>.image)*< ND_H5 >
+    )
+  | 
+    (
+      (Selected=< ST_H6 >.image)(content=<STRING>.image)*< ND_H6 >
+    )
+  )
+  {
+    System.out.print(Selected+" - > "+content+'\n');
+    return content;
+  }
+}

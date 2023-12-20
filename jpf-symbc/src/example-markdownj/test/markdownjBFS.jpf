@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=org.markdownj.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-markdownj
+sourcepath = ${jpf-symbc}/src/example-markdownj
+
+target = test.TestMarkdownj
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

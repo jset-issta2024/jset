@@ -1,0 +1,9 @@
+@include = ../../concolic.jpf
+
+coverage.include=com.univocity.parsers.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-univocity
+sourcepath = ${jpf-symbc}/src/example-univocity
+
+target = test.TestUnivocity

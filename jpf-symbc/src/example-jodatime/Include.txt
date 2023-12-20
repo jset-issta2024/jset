@@ -1,0 +1,15 @@
+Primordial,Java,stdlib,none
+Primordial,Java,jarFile,primordial.jar.model
+Application,Java,binaryDir,build/example-jodatime
+Application,Java,binaryDir,build/example-jodatime/org/joda/convert
+Application,Java,binaryDir,build/example-jodatime/org/joda/convert/factory
+Application,Java,binaryDir,build/example-jodatime/org/joda/time
+Application,Java,binaryDir,build/example-jodatime/org/joda/time/base
+Application,Java,binaryDir,build/example-jodatime/org/joda/time/chrono
+Application,Java,binaryDir,build/example-jodatime/org/joda/time/chrono/gj
+Application,Java,binaryDir,build/example-jodatime/org/joda/time/convert
+Application,Java,binaryDir,build/example-jodatime/org/joda/time/field
+Application,Java,binaryDir,build/example-jodatime/org/joda/time/format
+Application,Java,binaryDir,build/example-jodatime/org/joda/time/tz
+Application,Java,binaryDir,build/example-jodatime/org/joda/time/tz/src
+

@@ -1,0 +1,19 @@
+# @include = ../concolic.jpf
+
+symbolic.dp=z3bitvector
+symbolic.bvlength=64
+symbolic.lazy=on
+symbolic.arrays=true
+symbolic.collect_constraints=true
+symbolic.concolic=true
+
+budget.max_time=900000
+coverage.include=ch.nunnisoft.xml.parser.*
+listener = gov.nasa.jpf.symbc.SymbolicListener,gov.nasa.jpf.listener.BudgetChecker,gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-xml
+sourcepath = ${jpf-symbc}/src/example-xml
+
+target = test.xml.TestXml
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

@@ -1,0 +1,3 @@
+target = JLex.Main
+
+search.class=gov.nasa.jpf.search.heuristic.BFSHeuristic

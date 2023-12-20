@@ -1,0 +1,7 @@
+Helpers
+
+Tokens
+  identifier = ['a'..'z'];
+Productions
+  expression =
+  	{identifier} identifier;

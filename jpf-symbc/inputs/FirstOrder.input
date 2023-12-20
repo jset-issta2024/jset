@@ -1,0 +1,1 @@
+forall Z. ( forall X. ( p(X,f(g(Y))) & exists Y. (p(Y,f(X,Y)) -> (q(c) | !r)) ) & forall X. ( p(X,f(g(Y))) & exists Y. (p(Y,f(X,Y)) -> (q(c) | !r)) ) )

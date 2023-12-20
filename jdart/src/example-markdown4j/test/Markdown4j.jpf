@@ -1,0 +1,6 @@
+@include = ../../default.jpf
+
+target=test.TestMarkdown4j
+concolic.method.start=test.TestMarkdown4j.start(data:char[])
+concolic.method=start
+jdart.termination=gov.nasa.jpf.jdart.termination.TimedTermination,0,0,900

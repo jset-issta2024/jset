@@ -1,0 +1,1 @@
+{'Attrs.Attr':{'$all':[{"$elemMatch":{'Name':'srv','Value':'srvId'}}]}}

@@ -1,0 +1,11 @@
+@include = ../../concolic.jpf
+
+coverage.include=com.mpatric.mp3agic.*
+listener = gov.nasa.jpf.symbc.concolic.ConcreteExecutionListener,gov.nasa.jpf.listener.CoverageAnalyzer
+
+classpath = ${jpf-symbc}/build/example-mp3agic
+sourcepath = ${jpf-symbc}/src/example-mp3agic
+
+target = test.testMp3agicDriver
+
+search.class=gov.nasa.jpf.search.heuristic.BFSheuristic

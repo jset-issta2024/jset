@@ -1,0 +1,236 @@
+number & ccnDatas[i][0] & clocDatas[i][1] & ccnDatas[i][2] & ccnDatas[i][1] & array & bitwise & branch & branchTaint & branchLoop & constraint & file & float & jni & loop & recursion & reflection & type
+hline
+1 & actson & 516 & 125 & 3.29 & 3 & 0 & 64 & 1 & 7 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+2 & aejcc & 1233 & 320 & 2.86 & 3 & 0 & 127 & 1 & 34 & 0 & - & 0 & 0 & 1 & 0 & 0 & Math type
+hline
+3 & Antlr & 26897 & 7139 & 3.18 & 6 & 0 & 330 & 2 & 66 & 0 & - & 0 & 0 & 2 & 0 & 0 & Parser type
+hline
+4 & argo & 2564 & 825 & 1.8 & 3 & 0 & 161 & 1 & 8 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+5 & autolink & 691 & 240 & 6.49 & 3 & 0 & 213 & 1 & 30 & 0 & - & 0 & 0 & 1 & 0 & 0 & URL type
+hline
+6 & bling & 1335 & 357 & 3.05 & 0 & 0 & 151 & 0 & 49 & 0 & - & 0 & 0 & 0 & 0 & 0 & Parser type
+hline
+7 & bloat & 45401 & 12017 & 3.12 & 0 & 0 & 2801 & 12 & 611 & 0 & JAR & 0 & 0 & 7 & 0 & 0 & JAR type
+hline
+8 & BMPDecoder & 550 & 104 & 3.35 & 0 & 7 & 32 & 4 & 12 & 1 & BMP & 0 & 0 & 1 & 0 & 0 & BMP type
+hline
+9 & calculator & 1220 & 301 & 2.57 & 3 & 0 & 140 & 1 & 42 & 0 & - & 0 & 0 & 1 & 0 & 0 & Math type
+hline
+10 & clojure & 3077 & 1202 & 6.16 & 3 & 0 & 915 & 1 & 326 & 0 & - & 0 & 0 & 1 & 0 & 0 & Parser type
+hline
+11 & cmmparser & 3217 & 1395 & 5.32 & 3 & 0 & 832 & 1 & 136 & 0 & - & 0 & 0 & 1 & 0 & 0 & Interpreter type
+hline
+12 & colt & 36225 & 11918 & 2.86 & 0 & 0 & 824 & 0 & 294 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+13 & colt & 36225 & 11918 & 2.86 & 0 & 0 & 177 & 0 & 51 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+14 & colt & 36225 & 11918 & 2.86 & 0 & 0 & 288 & 0 & 183 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+15 & colt & 36225 & 11918 & 2.86 & 0 & 0 & 745 & 0 & 252 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+16 & colt & 36225 & 11918 & 2.86 & 0 & 0 & 661 & 0 & 218 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+17 & colt & 36225 & 11918 & 2.86 & 0 & 0 & 240 & 0 & 128 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+18 & colt & 36225 & 11918 & 2.86 & 0 & 0 & 824 & 0 & 263 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+19 & colt & 36225 & 11918 & 2.86 & 0 & 0 & 238 & 0 & 126 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+20 & colt & 36225 & 11918 & 2.86 & 0 & 0 & 1796 & 0 & 805 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+21 & commonmark-java & 4844 & 736 & 1.95 & 3 & 0 & 598 & 1 & 106 & 0 & - & 0 & 0 & 1 & 0 & 0 & Markdown type
+hline
+22 & commons-csv & 1321 & 442 & 3.56 & 3 & 0 & 136 & 1 & 39 & 0 & - & 0 & 0 & 1 & 0 & 0 & CSV type
+hline
+23 & CommonsCodec & 9113 & 1736 & 3.34 & 4 & 0 & 23 & 1 & 8 & 0 & - & 0 & 0 & 1 & 0 & 0 & Encoder type
+hline
+24 & curta & 4233 & 1309 & 4.0 & 3 & 0 & 629 & 1 & 117 & 0 & - & 0 & 0 & 1 & 0 & 0 & Math type
+hline
+25 & dom4j & 29434 & 9228 & 2.3 & 3 & 0 & 293 & 1 & 43 & 0 & - & 0 & 0 & 1 & 0 & 0 & XML type
+hline
+26 & expression & 28938 & 8317 & 3.12 & 3 & 10 & 1361 & 26 & 258 & 0 & - & 0 & 0 & 9 & 0 & 0 & Math type
+hline
+27 & fastcsv & 684 & 82 & 2.41 & 3 & 0 & 44 & 1 & 35 & 0 & - & 0 & 0 & 1 & 0 & 0 & CSV type
+hline
+28 & fastjson-dev & 19141 & 5481 & 4.85 & 6 & 0 & 2660 & 4 & 739 & 0 & - & 0 & 0 & 2 & 0 & 0 & JSON type
+hline
+29 & firstorderparser & 1913 & 524 & 2.7 & 3 & 0 & 194 & 1 & 48 & 0 & - & 0 & 0 & 1 & 0 & 0 & Parser type
+hline
+30 & flexmark & 28201 & 6199 & 1.87 & 3 & 0 & 2491 & 1 & 619 & 0 & - & 0 & 0 & 1 & 0 & 0 & Java type
+hline
+31 & formula4j & 5670 & 1073 & 2.17 & 3 & 0 & 290 & 1 & 102 & 0 & - & 0 & 0 & 1 & 0 & 0 & Math type
+hline
+32 & foxykeep & 3763 & 1298 & 5.9 & 3 & 0 & 122 & 1 & 74 & 0 & - & 0 & 0 & 1 & 0 & 0 & Android type
+hline
+33 & ftp & 2480 & 691 & 3.6 & 0 & 0 & 134 & 9 & 45 & 0 & TXT & 0 & 0 & 3 & 0 & 0 & Ftp type
+hline
+34 & galimatias & 2942 & 1262 & 5.71 & 3 & 0 & 552 & 1 & 301 & 0 & - & 0 & 0 & 1 & 0 & 0 & URL type
+hline
+35 & golang & 3080 & xxx & xxx & 3 & 0 & 912 & 1 & 168 & 0 & - & 0 & 0 & 1 & 0 & 0 & Parser type
+hline
+36 & gson & 8108 & 2689 & 3.43 & 3 & 0 & 1103 & 1 & 208 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+37 & html5parser & 14098 & xxx & xxx & 4 & 0 & 2419 & 1 & 224 & 0 & - & 0 & 0 & 1 & 0 & 0 & HTML type
+hline
+38 & htmlcleaner & 8206 & 2319 & 3.39 & 3 & 0 & 734 & 1 & 375 & 0 & - & 0 & 0 & 1 & 0 & 0 & HTML type
+hline
+39 & htmlgramparser & 2543 & 738 & 5.23 & 3 & 0 & 511 & 1 & 188 & 0 & - & 0 & 0 & 1 & 0 & 0 & HTML type
+hline
+40 & htmlparser2 & 2365 & 868 & 8.77 & 3 & 0 & 825 & 1 & 315 & 0 & - & 0 & 0 & 1 & 0 & 0 & HTML type
+hline
+41 & image4j & 1847 & 351 & 2.14 & 0 & 0 & 72 & 0 & 18 & 0 & BMP & 0 & 0 & 0 & 0 & 0 & Image type
+hline
+42 & ImageJA & 123840 & 43640 & 5.94 & 0 & 3 & 23 & 6 & 6 & 1 & BMP-GIF-PGM & 0 & 0 & 2 & 0 & 0 & Image type
+hline
+43 & ImageJA & 123840 & 43640 & 5.94 & 4 & 12 & 307 & 5 & 86 & 0 & BMP-GIF-PGM & 0 & 0 & 4 & 0 & 0 & Image type
+hline
+44 & ImageJA & 123840 & 43640 & 5.94 & 3 & 0 & 135 & 0 & 31 & 0 & BMP-GIF-PGM & 0 & 0 & 0 & 0 & 0 & Image type
+hline
+45 & ino-java & 42696 & 12219 & 3.0 & 4 & 0 & 5038 & 1 & 547 & 0 & - & 0 & 0 & 1 & 0 & 0 & Ion type
+hline
+46 & interpreter & 288 & 84 & 2.8 & 4 & 0 & 43 & 1 & 17 & 0 & - & 0 & 0 & 1 & 0 & 0 & Parser type
+hline
+47 & j2html & 1056 & 242 & 1.08 & 3 & 0 & 14 & 1 & 7 & 0 & - & 0 & 0 & 1 & 0 & 0 & HTML type
+hline
+48 & javaparser & 21497 & 8475 & 3.75 & 3 & 0 & 5265 & 1 & 440 & 0 & - & 0 & 0 & 1 & 0 & 0 & IR type
+hline
+49 & jcsv & 889 & 204 & 2.15 & 3 & 0 & 28 & 1 & 20 & 0 & - & 0 & 0 & 1 & 0 & 0 & CSV type
+hline
+50 & jdom & 20298 & 7775 & 3.64 & 4 & 0 & 286 & 1 & 70 & 0 & - & 0 & 0 & 1 & 0 & 0 & XML type
+hline
+51 & jericho & 9276 & 3540 & 2.76 & 0 & 0 & 1129 & 8 & 450 & 0 & - & 0 & 0 & 7 & 0 & 0 & HTML type
+hline
+52 & jieba & 1101 & 248 & 3.4 & 3 & 0 & 135 & 1 & 62 & 0 & - & 0 & 0 & 1 & 0 & 0 & Java type
+hline
+53 & JLex & 4239 & 1034 & 6.34 & 6 & 0 & 741 & 8 & 356 & 0 & - & 0 & 0 & 2 & 0 & 0 & Parser type
+hline
+54 & jmp123_400_utf8_mini & 3151 & 578 & 4.9 & 0 & 0 & 417 & 0 & 175 & 0 & MP3 & 0 & 0 & 0 & 0 & 0 & MP3 type
+hline
+55 & jodatime & 87588 & 17451 & 1.72 & 0 & 0 & 2007 & 0 & 267 & 0 & - & 0 & 0 & 0 & 0 & 0 & DateTime type
+hline
+56 & jpat & 1181 & 253 & 3.09 & 3 & 0 & 21 & 15 & 20 & 0 & - & 0 & 0 & 14 & 0 & 0 & Biology type
+hline
+57 & jsijcc & 558 & 3615 & 4.5 & 3 & 0 & 2083 & 1 & 302 & 0 & - & 0 & 0 & 1 & 0 & 0 & JavaScript type
+hline
+58 & json-flattener & 751 & 219 & 3.0 & 3 & 0 & 47 & 1 & 14 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+59 & json-java & 3854 & 1567 & 5.15 & 5 & 0 & 223 & 2 & 45 & 0 & - & 0 & 0 & 2 & 0 & 0 & JSON type
+hline
+60 & json-raupachz & 1351 & 379 & 3.58 & 3 & 0 & 194 & 1 & 45 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+61 & json-simple & 1653 & 504 & 4.0 & 3 & 0 & 115 & 1 & 19 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+62 & jsoniter & 12883 & 3679 & 3.0 & 3 & 0 & 818 & 1 & 206 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+63 & jsonparser-mwnorman & 3159 & 814 & 7.02 & 3 & 0 & 689 & 1 & 160 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+64 & jsonparser & 1690 & 517 & 4.5 & 3 & 0 & 296 & 1 & 74 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+65 & jsoup & 12396 & 2309 & 2.99 & 3 & 0 & 1443 & 1 & 188 & 0 & - & 0 & 0 & 1 & 0 & 0 & HTML type
+hline
+66 & jsqlparser & 30088 & 13283 & 5.26 & 4 & 0 & 14470 & 1 & 538 & 0 & - & 0 & 0 & 1 & 0 & 0 & SQL type
+hline
+67 & jtidy & 18933 & 3688 & 6.44 & 3 & 0 & 2 & 1 & 2 & 0 & - & 0 & 0 & 1 & 0 & 0 & HTML type
+hline
+68 & jurl & 805 & 79 & 3.04 & 10 & 1 & 171 & 17 & 41 & 1 & - & 0 & 0 & 11 & 0 & 0 & URL type
+hline
+69 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 641 & 0 & 376 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+70 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 641 & 0 & 376 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+71 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 800 & 0 & 433 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+72 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 800 & 0 & 464 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+73 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 814 & 0 & 476 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+74 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 800 & 0 & 464 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+75 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 800 & 2 & 464 & 0 & - & 1 & 0 & 2 & 0 & 0 & Math type
+hline
+76 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 0 & 0 & 0 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+77 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 641 & 0 & 375 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+78 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 814 & 0 & 475 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+79 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 641 & 0 & 375 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+80 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 800 & 0 & 433 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+81 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 641 & 0 & 355 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+82 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 800 & 0 & 433 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+83 & la4j & 11844 & 2549 & 1.94 & 0 & 0 & 800 & 0 & 433 & 0 & - & 1 & 0 & 0 & 0 & 0 & Math type
+hline
+84 & mapl & 4353 & 1154 & 3.53 & 3 & 0 & 696 & 1 & 85 & 0 & - & 0 & 0 & 1 & 0 & 0 & Java type
+hline
+85 & markdown4j & 3613 & 538 & 3.07 & 3 & 0 & 2 & 1 & 2 & 0 & - & 0 & 0 & 1 & 0 & 0 & Markdown type
+hline
+86 & markdownj & 929 & 149 & 1.6 & 3 & 0 & 55 & 1 & 13 & 0 & - & 0 & 0 & 1 & 0 & 0 & Markdown type
+hline
+87 & MarkdownPapers & 10511 & 4511 & 6.05 & 3 & 0 & 3266 & 0 & 302 & 0 & - & 0 & 0 & 0 & 0 & 0 & Markdown type
+hline
+88 & minimal-json & 1733 & 567 & 2.05 & 3 & 0 & 94 & 1 & 13 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+89 & mp3agic & 5224 & 1181 & 2.79 & 0 & 0 & 241 & 0 & 21 & 0 & MP3 & 0 & 0 & 0 & 0 & 0 & MP3 type
+hline
+90 & mXparser & 39783 & 12630 & 11.72 & 3 & 0 & 1575 & 3 & 437 & 0 & - & 0 & 0 & 2 & 0 & 0 & Math type
+hline
+91 & nanojson & 2033 & 790 & 3.19 & 3 & 0 & 214 & 1 & 69 & 0 & - & 0 & 0 & 1 & 0 & 0 & JSON type
+hline
+92 & nanoxml & 1140 & 310 & 3.3 & 3 & 0 & 113 & 60 & 52 & 0 & - & 0 & 0 & 39 & 13 & 0 & XML type
+hline
+93 & nekohtml & 6730 & 1862 & 4.08 & 3 & 0 & 104 & 1 & 19 & 0 & - & 0 & 0 & 1 & 0 & 0 & HTML type
+hline
+94 & ntru & 5609 & 1428 & 3.67 & 3 & 0 & 234 & 1 & 135 & 0 & - & 0 & 0 & 1 & 0 & 0 & Password type
+hline
+95 & oajavaparser & 15704 & 5981 & 6.99 & 3 & 0 & 5256 & 1 & 281 & 0 & - & 0 & 0 & 1 & 0 & 0 & Java type
+hline
+96 & open-m3u8 & 4719 & 735 & 1.74 & 3 & 0 & 211 & 1 & 53 & 0 & - & 0 & 0 & 1 & 0 & 0 & M3U8 type
+hline
+97 & pobs & 2762 & 412 & 1.84 & 0 & 0 & 59 & 3 & 15 & 0 & - & 0 & 0 & 6 & 0 & 0 & BNF type
+hline
+98 & rhino & 19749 & 5899 & 5.09 & 3 & 0 & 1877 & 1 & 433 & 0 & - & 0 & 0 & 1 & 0 & 0 & JavaScript type
+hline
+99 & rparser & 6595 & xxx & xxx & 3 & 0 & 1333 & 1 & 271 & 0 & - & 0 & 0 & 1 & 0 & 0 & R type
+hline
+100 & sablecc & 20338 & 4354 & 1.92 & 4 & 0 & 1061 & 5 & 168 & 0 & SCC & 0 & 0 & 4 & 0 & 0 & Parser type
+hline
+101 & schroeder & 11106 & 1847 & 2.87 & 0 & 0 & 37 & 0 & 9 & 0 & WAV & 0 & 0 & 0 & 0 & 0 & WAV type
+hline
+102 & sie & 265 & 71 & 3.09 & 3 & 0 & 31 & 5 & 8 & 0 & - & 0 & 0 & 1 & 0 & 0 & Parser type
+hline
+103 & simple-csv & 1450 & 431 & 2.68 & 3 & 0 & 65 & 1 & 12 & 0 & - & 0 & 0 & 1 & 0 & 0 & CSV type
+hline
+104 & sixpath & 5951 & 3062 & 9.01 & 3 & 0 & 2049 & 1 & 302 & 0 & - & 0 & 0 & 1 & 0 & 0 & Parser type
+hline
+105 & snakeyaml & 9834 & 2832 & 3.07 & 4 & 0 & 865 & 1 & 264 & 0 & - & 0 & 0 & 1 & 0 & 0 & YAML type
+hline
+106 & soot-c & 32350 & 7905 & 2.16 & 0 & 0 & 2394 & 8 & 916 & 0 & JAR & 0 & 0 & 0 & 0 & 0 & Java type
+hline
+107 & sqlparser & 1593 & 488 & 4.28 & 3 & 0 & 235 & 1 & 60 & 0 & - & 0 & 0 & 1 & 0 & 0 & SQL type
+hline
+108 & super-csv & 3608 & 1002 & 2.43 & 3 & 0 & 67 & 1 & 39 & 0 & - & 0 & 0 & 1 & 0 & 0 & CSV type
+hline
+109 & toba & 5752 & 1594 & 4.73 & 0 & 0 & 200 & 0 & 71 & 0 & - & 0 & 0 & 0 & 0 & 0 & Java type
+hline
+110 & txtmark & 4122 & 1111 & 5.32 & 3 & 0 & 750 & 1 & 261 & 0 & - & 0 & 0 & 1 & 0 & 0 & Markdown type
+hline
+111 & univocity & 18141 & 6088 & 2.44 & 3 & 0 & 1597 & 1 & 545 & 0 & - & 0 & 0 & 1 & 0 & 0 & Java type
+hline
+112 & uriparser & 2501 & 821 & 5.13 & 3 & 0 & 528 & 1 & 113 & 0 & - & 0 & 0 & 1 & 0 & 0 & URI type
+hline
+113 & url-detector & 1603 & 617 & 5.66 & 3 & 0 & 321 & 1 & 141 & 0 & - & 0 & 0 & 1 & 0 & 0 & URL type
+hline
+114 & xerces & 117619 & 34312 & 3.57 & 3 & 0 & 2 & 1 & 2 & 0 & - & 0 & 0 & 1 & 0 & 0 & XML type
+hline
+115 & xml & 2872 & 1122 & 1.72 & 6 & 0 & 77 & 12 & 9 & 0 & - & 0 & 0 & 5 & 0 & 0 & XML type
+hline
+116 & yamlbeans & 4981 & 1866 & 3.93 & 0 & 0 & 509 & 4 & 146 & 0 & YAML & 0 & 0 & 3 & 0 & 0 & YAML type
+hline
+Sum & Program & LOC & NCSS & CCN & 77 & 5 & 117 & 84 & 117 & 3 & -1 & -1 & 0 & 83 & 1 & 0 & Type
+hline

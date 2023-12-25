@@ -1,0 +1,25 @@
+1 example-colt-test.TestColt.log 0
+2 example-colt-test.TestColtCD.log 0
+3 example-colt-test.TestColtED.log 0
+4 example-colt-test.TestColtLU.log 0
+5 example-colt-test.TestColtQR.log 0
+6 example-colt-test.TestColtRank.log 0
+7 example-colt-test.TestColtSolver.log 0
+8 example-colt-test.TestColtSVD.log 0
+9 example-colt-test.TestColtTVS.log 0
+10 example-la4j-test.TestCholeskyDecompositor.log 0
+11 example-la4j-test.TestEigenDecompositor.log 0
+12 example-la4j-test.TestForwardBackSubstitutionSolver.log 0
+13 example-la4j-test.TestGaussianSolver.log 0
+14 example-la4j-test.TestGaussJordanInverter.log 0
+15 example-la4j-test.TestJacobiSolver.log 0
+16 example-la4j-test.TestLeastSquaresSolver.log 2
+17 example-la4j-test.TestLIA4J.log 0
+18 example-la4j-test.TestLUDecompositor.log 0
+19 example-la4j-test.TestNoPivotGaussInverter.log 0
+20 example-la4j-test.TestQRDecompositor.log 0
+21 example-la4j-test.TestSeidelSolver.log 0
+22 example-la4j-test.TestSingularValueDecompositor.log 0
+23 example-la4j-test.TestSquareRootSolver.log 0
+24 example-la4j-test.TestSweepSolver.log 0
+float sum 1 in programs

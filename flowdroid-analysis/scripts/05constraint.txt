@@ -1,0 +1,830 @@
+
+    private static void setTaintParameters4SweepSolver() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestSweepSolver";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4SquareRootSolver() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestSquareRootSolver";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4SingularValueDecompositor() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestSingularValueDecompositor";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4SeidelSolver() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestSeidelSolver";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4QRDecompositor() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestQRDecompositor";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4NoPivotGaussInverter() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestNoPivotGaussInverter";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4LUDecompositor() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestLUDecompositor";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4LIA4J() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestLIA4J";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4LeastSquaresSolver() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestLeastSquaresSolver";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4JacobiSolver() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestJacobiSolver";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4GaussJordanInverter() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestGaussJordanInverter";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4GaussianSolver() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestGaussianSolver";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4ForwardBackSubstitutionSolver() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestForwardBackSubstitutionSolver";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4EigenDecompositor() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestEigenDecompositor";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4CholeskyDecompositor() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-la4j";
+        classname = "test.TestCholeskyDecompositor";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4ColtTVS() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-colt";
+        classname = "test.TestColtTVS";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4ColtSVD() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-colt";
+        classname = "test.TestColtSVD";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4ColtSolver() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-colt";
+        classname = "test.TestColtSolver";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4ColtRank() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-colt";
+        classname = "test.TestColtRank";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4ColtQR() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-colt";
+        classname = "test.TestColtQR";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4ColtLU() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-colt";
+        classname = "test.TestColtLU";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4ColtED() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-colt";
+        classname = "test.TestColtED";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4ColtCD() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-colt";
+        classname = "test.TestColtCD";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setTaintParameters4Colt() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-colt";
+        classname = "test.TestColt";
+        setFloatSources();
+        setSinks();
+    }
+
+    private static void setParameters4yamlbeans() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-yamlbeans";
+        classname = "test.TestYamlbeansDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4xerces() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-xerces";
+        classname = "test.testXerces";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4URL_Detector() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-url-detector";
+        classname = "test.TestUrlDetector";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4uriparser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-uriparser";
+        classname = "test.TestUriParser";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4univocity_parsers() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-univocity";
+        classname = "test.TestUnivocity";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4txtmark() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-txtmark";
+        classname = "test.TestTxtmark";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4toba() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-toba";
+        classname = "toba.translator.Trans";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4super_csv() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-super-csv";
+        classname = "test.testSuperCSVDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4sqlparser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-sqlparser";
+        classname = "sql.TestSqlParser";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4soot_c() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-soot-c";
+        classname = "ca.mcgill.sable.soot.jimple.MainSE";
+        setIntegerSources();
+        setSinks();
+    }
+
+    private static void setParameters4snakeyaml() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-snakeyaml";
+        classname = "test.testSnakeyaml";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4sixpath() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-sixpath";
+        classname = "test.sixpath.TestSixpath";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4simplecsv() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-simple-csv";
+        classname = "test.TestSimplecsv";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4sie() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-sie";
+        classname = "test.TestSie";
+        setIntegerSources();
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4schroeder() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-schroeder";
+        classname = "schroeder.test.TestWAVEFileRead";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4sablecc() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-sablecc";
+        classname = "ca.mcgill.sable.sablecc.SableCC";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4RParser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-rparser";
+        classname = "test.TestR";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4rhino() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-rhino";
+        classname = "test.rhino.TestParser";
+        setIntegerSources();
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4pgm_imagej() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-ImageJA";
+        classname = "test.TestPgmDecoderDriver";
+        setIntegerSources();
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4open_m3u8() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-open-m3u8";
+        classname = "test.TestOpenM3u8";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4oajavaparser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-oajavaparser";
+        classname = "test.TestOajavaParser";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4NunniMJAX() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-xml";
+        classname = "test.TestXml";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4ntru() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-ntru";
+        classname = "test.NTRUExample";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4nekothml() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-nekohtml";
+        classname = "test.TestNekohtml";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4nanoxml() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-nanoxml";
+        classname = "nanoxml.DumpXML";
+        setIntegerSources();
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4nanojson() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-nanojson";
+        classname = "test.TestNanojson";
+        setIntegerSources();
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4mXparser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-mXparser";
+        classname = "test.mxparser.TestmXparser";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4mp3agic() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-mp3agic";
+        classname = "test.testMp3agicDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4minimal_json() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-minimal-json";
+        classname = "test.TestDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4MarkdownPapers() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-MarkdownPapers";
+        classname = "test.TestMarkdownPapers";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4markdownj() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-markdownj";
+        classname = "test.TestMarkdownj";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4markdown4j() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-markdown4j";
+        classname = "test.TestMarkdown4j";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4Mapl() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-mapl";
+        classname = "test.TestMapl";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jurl() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jurl";
+        classname = "test.TestJurl";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jtidy() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jtidy";
+        classname = "test.TestJtidy";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4JSqlParser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jsqlparser";
+        classname = "test.TestJsqlparserDriver";
+        setIntegerSources();
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jsoup() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jsoup";
+        classname = "test.TestJsoup";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4json_simple() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-json-simple";
+        classname = "test.TestJsonSimpleDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4json_raupachz() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-json-raupachz";
+        classname = "test.TestJsonRaupachz";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4JSONParser_mwnorman() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jsonparser-mwnorman";
+        classname = "org.mwnorman.json.test.TestJsonParserMwnorman";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jsonparser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jsonparser";
+        classname = "test.TestJsonparser";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4JSON_java() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-json-java";
+        classname = "test.TestJsonJavaDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4json_iterator() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jsoniter";
+        classname = "test.TestJsoniter";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4json_flattener() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-json-flattener";
+        classname = "test.TestJsonFlattener";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4JSIJCC() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jsijcc";
+        classname = "test.TestJsijcc";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jpat() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jpat";
+        classname = "jpat.test.JPATTest";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4joda_time() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jodatime";
+        classname = "test.JodatimeExample";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jmp123_400_utf8_mini() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jmp123_400_utf8_mini";
+        classname = "test.TestJmp123Driver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4JLex() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-JLex";
+        classname = "JLex.Main";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jieba_analysis() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jieba";
+        classname = "test.TestJieba";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jericho() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jericho";
+        classname = "test.TestHTML";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jepjavagpl() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-expression";
+        classname = "test.expression.TestExpression";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jdom() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jdom";
+        classname = "test.testJdom";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4jcsv() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-jcsv";
+        classname = "test.TestJcsv";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4JavaParserObjects() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-pobs";
+        classname = "test.pobs.SimpleCalc";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4japaparser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-javaparser";
+        classname = "test.TestJavaparser";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4J2Latex() {
+    }
+
+    private static void setParameters4j2html() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-j2html";
+        classname = "test.TestJ2html";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4inojava() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-ino-java";
+        classname = "test.TestInojava";
+        setIntegerSources();
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4interpreter() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-interpreter";
+        classname = "test.TestInterpreter";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4image4j() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-image4j";
+        classname = "test.TestImage4jDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4htmlparser2() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-htmlparser2";
+        classname = "test.html.TestHtmlparser2";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4htmlparser() {
+    }
+
+    private static void setParameters4html_parser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-htmlgramparser";
+        classname = "test.TestHtmlGram";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4htmlcleaner() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-htmlcleaner";
+        classname = "test.TestHtmlcleaner";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4HTML5Parser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-html5parser";
+        classname = "test.TestHtml5parserDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4gson() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-gson";
+        classname = "test.TestGson";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4Golang() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-golang";
+        classname = "test.TestGo";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4gif_imagej() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-ImageJA";
+        classname = "test.TestGifDecoderDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4galimatias() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-galimatias";
+        classname = "test.TestGalimatias";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4ftps_client_java() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-ftp";
+        classname = "test.ftp.TestFTP";
+        setIntegerSources();
+        setSinks();
+    }
+
+    private static void setParameters4foxykeep() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-foxykeep";
+        classname = "test.TestFoxykeep";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4formula4j() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-formula4j";
+        classname = "test.TestFormula4j";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4flexmark_java() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-flexmark";
+        classname = "test.TestFlexmark";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4FirstOrderParser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-firstorderparser";
+        classname = "de.dominicscheurer.fol.test.TestFirstOrder";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4fastjson() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-fastjson-dev";
+        classname = "test.testFastjsonDev";
+        setIntegerSources();
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4FastCSV() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-fastcsv";
+        classname = "test.TestFastcsv";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4dom4j() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-dom4j";
+        classname = "test.testDom4j";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4Curta() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-curta";
+        classname = "test.TestCurta";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4commons_csv() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-commons-csv";
+        classname = "test.TestCommonsCsv";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4commons_codec() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-CommonsCodec";
+        classname = "test.TestCommonsCodec";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4commonmark() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-commonmark-java";
+        classname = "test.TestCommonmarkJava";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4cmm() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-cmmparser";
+        classname = "test.TestCmmparser";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4clojure_parser() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-clojure";
+        classname = "test.TestClojure";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4calculator() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-calculator";
+        classname = "test.TestCalculator";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4bmpimagej() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-ImageJA";
+        classname = "test.TestBmpDecoderDriver";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4bmpDecoder() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-BMPDecoder";
+        classname = "test.TestBMPDecoder";
+        setIntegerSources();
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4bloat() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-bloat";
+        classname = "EDU.purdue.cs.bloat.decorate.ModifiedMainForSE";
+        setIntegerSources();
+        setSinks();
+    }
+
+    private static void setParameters4bling() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-bling";
+        classname = "test.TestBling";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4awkparser() {
+    }
+
+    private static void setParameters4autolinkjava() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-autolink";
+        classname = "test.TestAutolink";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4argo() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-argo";
+        classname = "test.TestArgo";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4antlr() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-Antlr";
+        classname = "test.antlr.TestUDL";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4AEJCC() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-aejcc";
+        classname = "test.TestAejcc";
+        setSources();
+        setSinks();
+    }
+
+    private static void setParameters4actson() {
+        appPath = "/home/lmx/Documents/GitHub/jpf-concolic/jpf-concolic/build/example-actson";
+        classname = "test.TestActson";
+        setSources();
+        setSinks();
+    }

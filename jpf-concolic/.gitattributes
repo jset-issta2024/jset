@@ -1,1 +1,1 @@
-build filter=lfs diff=lfs merge=lfs -text
+build/jpf-concolic.jar filter=lfs diff=lfs merge=lfs -text

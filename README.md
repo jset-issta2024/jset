@@ -6,19 +6,30 @@ This Github site contains the artifact of the submission titled "JSET: A Benchma
 The artifact contains source code, scripts and experimental results of our submission. The reviewers can follow the steps below to set the environment and try our work. 
 
 # Benchmark Component
-Each program in JSET provides source code and at least one symbolic execution driver, which are. jpf files for the two open-source tools SPF and JDart.
+Each program in JSET provides source code and at least one symbolic execution driver, which are .jpf files for the two open-source tools SPF and JDart.
 
 
 # Experiment Environment
 
-The installation process of SPF and JDart can refer to the official website of the tool: https://github.com/SymbolicPathFinder/jpf-symbc for SPF and https://github.com/psycopaths/jdart for JDart.
+For the static analysis tool FlowDroid, we directly use source code compilation, refer to the website https://github.com/secure-software-engineering/FlowDroid.
 
+The installation process of SPF and JDart can refer to the official website of the tool: https://github.com/SymbolicPathFinder/jpf-symbc for SPF and https://github.com/psycopaths/jdart for JDart. 
 
-# Symbolic Execution of SPF and JDart
+For the JPF-Concolic, we provide an executable file **jpf-concoic.jar** directly.
 
-Running scripts runTool1SPFPara.py and runTool2JDartPara.py can run all symbolic execution drivers of JSET and obtain the running results.
+# Taint Analysis
 
-Running script run_coverage_para.py can run all coverage drivers and obtain the coverage results.
+The scripts required for static analysis are all in path **/flowdroid-analysis/scripts**.
+
+After compiling the source code using Maven, first use a script **runStaticAnalysisPara.py** to perform the necessary instrumentation for the stain analysis process on the original program, and then sequentially detect the taint flow information for each feature by running scripts **runTaintArrayPara.py**, **runTaintBranchPara.py**, and **runTaintLoopPara.py**, etc.
+
+# Symbolic Execution
+
+Running scripts **runTool1SPFPara.py** and **runTool2JDartPara.py** can run all symbolic execution drivers of JSET and obtain the running results.
+
+Running the script **runJpfConPara.py** in path **/jpf-concolic** can obtain the experimental results of JPF-Concolic.
+
+Running the script **run_coverage_para.py** in path **IncrementalCoverage** can run all coverage drivers and obtain the coverage results.
 
 # Experiment Data
 
@@ -76,7 +87,7 @@ The detailed results of branch coverage under three tools will be displayed.
 
 ```bash
 +-------------------------------------------------------+
-|                          Cov                          |
+|                        Coverage                       |
 +------------------+--------+----------+----------------+
 |  Program         |  SPF   |  JDart   |  JPF-Concolic  |
 +------------------+--------+----------+----------------+
